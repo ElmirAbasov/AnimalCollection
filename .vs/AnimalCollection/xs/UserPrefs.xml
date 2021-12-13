@@ -1,4 +1,27 @@
 ﻿<Properties StartupConfiguration="{1ED5B53F-889A-4977-9D05-8FD525DE0F75}|Default">
-  <MonoDevelop.Ide.ItemProperties.AnimalCollection FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="AnimalCollection/Entities /Animal.cs" Line="9" Column="41" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AnimalCollection" expanded="True">
+            <Node name="AnimalCollection" expanded="True">
+              <Node name="Entities " expanded="True">
+                <Node name="Animal.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AnimalCollection PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
