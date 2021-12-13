@@ -7,7 +7,16 @@ namespace AnimalCollection.Repositories
 {
     public class AnimalRepository : IAnimalRepository
     {
-        private List<Animal> _animals;
+        private List<Animal> _animals = new()
+        {
+            new Animal
+            {
+                Id = 0,
+                Name = "ko",
+                Type = "däggdjur",
+
+            }
+        };
 
         public AnimalRepository() { }
 
@@ -18,8 +27,9 @@ namespace AnimalCollection.Repositories
 
         public Animal GetByID(int id)
         {
-            Animal Animal = _animals.Find(id);
-            return Animal;
+            IEnumerable<Animal> animal = _animals.Where(item => item.Id == id);
+
+            return animal.SingleOrDefault();
         }
 
         public Animal CreateAnimal(Animal animal)
@@ -29,22 +39,19 @@ namespace AnimalCollection.Repositories
             return animal;
         }
 
-        public Animal UpdateAnimal(Animal animal, int id)
+        public Animal UpdateAnimal(Animal animal)
         {
-            Animal currentAnimal = _animals.FirstOrDefault(item => item.Id == animal.Id);
-            if (currentAnimal != null)
-            {
-                currentAnimal.Name = Animal.Name;
-                currentAnimal.Type = Animal.Type;
+            int index = _animals.FindIndex(item => item.Id == animal.Id);
+   
+                _animals[index] = animal;
 
-            }
-
-            return currentAnimal;
+            return animal;
         }
 
         public void DeleteAnimal(int id)
         {
-            _animals.Remove(GetByID(id));
+            int index = _animals.FindIndex(xanimal => xanimal.Id == id);
+            _animals.RemoveAt(index);
         }
 
     }

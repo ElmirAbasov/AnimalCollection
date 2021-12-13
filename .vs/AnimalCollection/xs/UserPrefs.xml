@@ -1,31 +1,25 @@
 ﻿<Properties StartupConfiguration="{1ED5B53F-889A-4977-9D05-8FD525DE0F75}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalCollection/AnimalCollection.csproj">
-    <Files>
-      <File FileName="AnimalCollection/Controllers/AnimalController.cs" Line="61" Column="19" />
-      <File FileName="AnimalCollection/Entities /Animal.cs" Line="9" Column="41" />
-      <File FileName="AnimalCollection/Repositories/AnimalRepository.cs" Line="45" Column="41" />
-      <File FileName="AnimalCollection/Repositories/IAnimalRepository.cs" Line="1" Column="1" />
-      <File FileName="AnimalCollection/Startup.cs" Line="24" Column="10" />
-      <File FileName="AnimalCollection/Program.cs" Line="1" Column="1" />
-      <File FileName="AnimalCollection/appsettings.json" Line="1" Column="1" />
-      <File FileName="AnimalCollection/Properties/launchSettings.json" Line="14" Column="29" />
-      <File FileName="AnimalCollection/AnimalCollection.csproj" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AnimalCollection" expanded="True">
             <Node name="AnimalCollection" expanded="True">
-              <Node name="Dependencies" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="AnimalController.cs" selected="True" />
+              </Node>
               <Node name="Entities " expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
