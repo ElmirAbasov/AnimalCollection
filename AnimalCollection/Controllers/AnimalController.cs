@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AnimalCollection.Entities;
+using AnimalCollection.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,10 +22,8 @@ namespace AnimalCollection.Controllers
         [Route("")]
         public IActionResult GetAnimals()
         {
-            var animals = _repo
-                .GetAll()
-                .ToList()
-                .MapToAnimalsDTOs();
+
+            var animals = _repo.GetAll();
             return Ok(animals);
         }
         // GET /api/vinyl/:id
@@ -31,32 +31,29 @@ namespace AnimalCollection.Controllers
         public IActionResult GetAnimalsByID(int id)
         {
             Animal animal = _repo.GetByID(id);
-            if (animal is null) // vinyl == null
+            if (animal is null) 
             {
-                return NotFound("Could not find vinyl with ID " + id);
+                return NotFound("Could not find animal with ID " + id);
             }
-            AnimalDTO animalDTO = animal.MapToVinylDTO();
-            return Ok(animalDTO);
+            return Ok(animal);
         }
         [HttpPost("")]
-        public IActionResult CreateAnimal([FromBody] CreateAnimalDTO createdAnimalDTO)
+        public IActionResult CreateAnimal([FromBody] Animal animal )
         {
-            Animal createdAnimal = _repo.CreateAnimal(createAnimalDTO);
-            //VinylDTO vinylDTO = createdVinyl.MapToVinylDTO();
-            AnimalDTO animalSavedDTO = _repo
-                .GetByID(createdAnimal.Id)
-                .MapToAnimalDTO();
+            Animal createdAnimal = _repo.CreateAnimal(animal);
+
+            _repo.CreateAnimal(createdAnimal);
             return CreatedAtAction(
-                nameof(GetAnimalByID),
+                nameof(GetAnimals),
                 new { id = AnimalSavedDTO.Id },
                 AnimalSavedDTO);
-        }
+        
         [HttpPut("{id}")]
         public IActionResult UpdateAnimal([FromBody] Animal animal, int id)
         {
             Animal updatedAnimal = _repo.UpdateAnimal(animal, id);
             //VinylDTO vinylDTO = updatedVinyl.MapToVinylDTO();
-            AnimalDTO animalDTO = _repo.GetByID(id).MapToAnimalDTO();
+            Animal animalDTO = _repo.GetByID(id).MapToAnimalDTO();
             return Ok(animalDTO);
         }
         [HttpDelete("{id}")]
