@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/Users/elmirabasov/.nuget/packages/": {}
+    "/Users/jonasbergstrom/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/elmirabasov/Projects/Lab/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
+      "projectUniqueName": "/Users/jonasbergstrom/Desktop/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
       "projectName": "AnimalCollection",
-      "projectPath": "/Users/elmirabasov/Projects/Lab/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
-      "packagesPath": "/Users/elmirabasov/.nuget/packages/",
-      "outputPath": "/Users/elmirabasov/Projects/Lab/AnimalCollection/AnimalCollection/obj/",
+      "projectPath": "/Users/jonasbergstrom/Desktop/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
+      "packagesPath": "/Users/jonasbergstrom/.nuget/packages/",
+      "outputPath": "/Users/jonasbergstrom/Desktop/AnimalCollection/AnimalCollection/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/elmirabasov/.config/NuGet/NuGet.Config"
+        "/Users/jonasbergstrom/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

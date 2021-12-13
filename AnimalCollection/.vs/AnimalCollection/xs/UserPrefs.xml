@@ -1,25 +1,26 @@
-﻿<Properties StartupConfiguration="{5396C9E8-3987-4360-A608-F11D396F0935}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+﻿<Properties StartupConfiguration="{2DE28115-E0DF-476F-905C-FB30166F8DE9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AnimalControllers.cs">
     <Files>
-      <File FileName="Controllers/WeatherForecastController.cs" Line="32" Column="42" />
-      <File FileName="Entities/Animal.cs" Line="1" Column="1" />
+      <File FileName="Controllers/AnimalControllers.cs" Line="5" Column="19" />
       <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="5" Column="29" />
-      <File FileName="WeatherForecast.cs" Line="16" Column="2" />
-      <File FileName="appsettings.json" Line="1" Column="1" />
-      <File FileName="obj/Debug/net5.0/AnimalCollection.GlobalUsings.g.cs" Line="18" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AnimalCollection" expanded="True">
             <Node name="AnimalCollection" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="AnimalControllers.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
