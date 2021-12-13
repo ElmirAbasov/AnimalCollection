@@ -1,5 +1,8 @@
 ﻿<Properties StartupConfiguration="{1ED5B53F-889A-4977-9D05-8FD525DE0F75}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalCollection/Controllers/AnimalController.cs">
+    <Files>
+      <File FileName="AnimalCollection/Controllers/AnimalController.cs" Line="63" Column="14" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
