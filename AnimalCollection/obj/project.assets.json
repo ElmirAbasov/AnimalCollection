@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/Users/elmirabasov/.nuget/packages/": {}
+    "/Users/walmin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/elmirabasov/Projects/Lab/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
+      "projectUniqueName": "/Users/walmin/Desktop/Programming/Database/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
       "projectName": "AnimalCollection",
-      "projectPath": "/Users/elmirabasov/Projects/Lab/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
-      "packagesPath": "/Users/elmirabasov/.nuget/packages/",
-      "outputPath": "/Users/elmirabasov/Projects/Lab/AnimalCollection/AnimalCollection/obj/",
+      "projectPath": "/Users/walmin/Desktop/Programming/Database/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
+      "packagesPath": "/Users/walmin/.nuget/packages/",
+      "outputPath": "/Users/walmin/Desktop/Programming/Database/AnimalCollection/AnimalCollection/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/elmirabasov/.config/NuGet/NuGet.Config"
+        "/Users/walmin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
