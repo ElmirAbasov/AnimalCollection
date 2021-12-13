@@ -1,19 +1,25 @@
 ﻿<Properties StartupConfiguration="{1ED5B53F-889A-4977-9D05-8FD525DE0F75}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalCollection/Controllers/AnimalController.cs">
     <Files>
       <File FileName="AnimalCollection/Entities /Animal.cs" Line="9" Column="41" />
+      <File FileName="AnimalCollection/Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+      <File FileName="AnimalCollection/Controllers/AnimalController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AnimalCollection" expanded="True">
             <Node name="AnimalCollection" expanded="True">
-              <Node name="Entities " expanded="True">
-                <Node name="Animal.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="AnimalController.cs" selected="True" />
               </Node>
+              <Node name="Entities " expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

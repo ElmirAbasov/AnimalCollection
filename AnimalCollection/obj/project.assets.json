@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/Users/walmin/.nuget/packages/": {}
+    "/Users/jonasbergstrom/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/walmin/Desktop/Programming/Database/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
+      "projectUniqueName": "/Users/jonasbergstrom/Desktop/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
       "projectName": "AnimalCollection",
-      "projectPath": "/Users/walmin/Desktop/Programming/Database/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
-      "packagesPath": "/Users/walmin/.nuget/packages/",
-      "outputPath": "/Users/walmin/Desktop/Programming/Database/AnimalCollection/AnimalCollection/obj/",
+      "projectPath": "/Users/jonasbergstrom/Desktop/AnimalCollection/AnimalCollection/AnimalCollection.csproj",
+      "packagesPath": "/Users/jonasbergstrom/.nuget/packages/",
+      "outputPath": "/Users/jonasbergstrom/Desktop/AnimalCollection/AnimalCollection/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/walmin/.nuget/NuGet/NuGet.Config"
+        "/Users/jonasbergstrom/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
