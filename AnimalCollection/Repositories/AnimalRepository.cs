@@ -1,4 +1,5 @@
 using AnimalCollection.Entities;
+using AnimalCollection.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,26 @@ namespace AnimalCollection.Repositories
             new Animal
             {
                 Id = 0,
-                Name = "ko",
-                Type = "däggdjur",
-
+                Name = "Ko",
+                Type = "Däggdjur",
+            },
+            new Animal
+            {
+                Id = 1,
+                Name = "Blåval",
+                Type = "Däggdjur",
+            },
+            new Animal
+            {
+                Id = 2,
+                Name = "Uggla",
+                Type = "Fågel",
+            },
+            new Animal
+            {
+                Id = 3,
+                Name = "Lax",
+                Type = "Fisk",
             }
         };
 
@@ -34,23 +52,31 @@ namespace AnimalCollection.Repositories
 
         public Animal CreateAnimal(Animal animal)
         {
+            animal.Id = _animals.Max(a => a.Id) + 1;
             _animals.Add(animal);
 
             return animal;
         }
 
-        public Animal UpdateAnimal(Animal animal)
+        public Animal UpdateAnimal(UpdateAnimalDTO updateAnimalDTO, int id)
         {
-            int index = _animals.FindIndex(item => item.Id == animal.Id);
-   
-                _animals[index] = animal;
+            Animal updatedAnimal = new Animal
+            {
+                Id = id,
+                Name = updateAnimalDTO.Name,
+                Type = updateAnimalDTO.Type
 
-            return animal;
+            };
+
+            int index = _animals.FindIndex(a => a.Id == id);
+            _animals[index] = updatedAnimal;
+
+            return updatedAnimal;
         }
 
         public void DeleteAnimal(int id)
         {
-            int index = _animals.FindIndex(xanimal => xanimal.Id == id);
+            int index = _animals.FindIndex(a => a.Id == id);
             _animals.RemoveAt(index);
         }
 
