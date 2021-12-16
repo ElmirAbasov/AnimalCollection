@@ -1,4 +1,5 @@
 using AnimalCollection.Entities;
+using AnimalCollection.DTOs;
 using System.Collections.Generic;
 
 namespace AnimalCollection.Repositories
@@ -8,7 +9,7 @@ namespace AnimalCollection.Repositories
         List<Animal> GetAll();
         Animal GetByID(int id);
         Animal CreateAnimal(Animal animal);
-        Animal UpdateAnimal(Animal animal);
+        Animal UpdateAnimal(UpdateAnimalDTO updateAnimalDTO, int id);
         void DeleteAnimal(int id);
     }
 }
